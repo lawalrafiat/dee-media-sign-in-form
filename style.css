@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container{
+    background-color:#181818;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    flex: 1;
+}
+
+.right-container{
+    flex: 2;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+form input, button{
+    display: block;
+    margin-top: 0.2;
+    margin-bottom: 1em;
+    width: 23vw;
+    padding-bottom: 0.5em;
+}
+
+form input{
+    background-color: #181818;
+    border: 1px solid #555;
+}
+
+form button{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    background-color: #f96816;
+    color: #fff;
+    border: none;
+}
+
+.links{
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+
+.or .bars{
+    flex: auto;
+    
+    height: 1px;
+    width: 100px;
+}
+
+.or span{
+    padding: 0 0.5em;
+}
+
+.pri-btn a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #555;
+    padding: 5px 50px;
+}
+
+.pri-btn a:hover{
+    background-color: orange;
+}
+
+footer{
+    margin-top: 5em;
+}
+
+footer p{
+    text-align: center;
+    padding: 0.3em 0;
+}
+
+footer #term{
+    color: #f96816;
+}
+
+footer #term span{
+    color: #fff;
+}
+
+/* right side*/
+
+.right-container{
+    background-image: url('background.jpg');
+    background-position: center;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.right .right-text h2{
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        color: #181818;
+        padding-bottom: 0.5rem;
+}
+
+.right-link{
+    margin-top: 1em;
+}
+
+.right-link a{
+    text-decoration: none;
+    color: #181818;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px 50px;
+}
+
+@media (max-width:1024px){
+    .container{
+        background-color:#181818;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .left{
+        flex: 1;
+    }
+    
+    .right-container{
+        flex: 1;
+    }
+    .logo{
+        margin-top: 20vh;
+    }
+
+    
+    form input, button{
+        display: block;
+        margin-top: 0.2;
+        margin-bottom: 1em;
+        width: 30vw;
+        padding-bottom: 0.5em;
+    }
+
+    .right .right-text{
+        font-size: 15px;
+        letter-spacing: 0.1em;
+        color: #181818;
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+@media (max-width: 786px){
+
+    .container{
+        background-color:#181818;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .right-container{
+        display: none;
+    }
+
+    form input, button{
+        display: block;
+        margin-top: 0.2;
+        margin-bottom: 1em;
+        width: 60vw;
+        padding-bottom: 0.5em;
+    }
+
+    footer{
+        margin-top: 1em;
+    }
+
+    
+    footer p{
+        text-align: center;
+        padding: 0.3em 0;
+    }
+
+    
+    footer #term{
+        color: #f96816;
+    }
+
+    footer #term span{
+        color: #fff;
+    }
+
+    .logo{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+
+    
+}
